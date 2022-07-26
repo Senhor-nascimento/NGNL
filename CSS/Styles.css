@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background-color: #dc2e69;
+}
+
+/*Aqui começa a edição do footer e header*/
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.line{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.vertical{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.vertical:nth-child(2), .vertical:nth-child(3){
+    flex-basis: 15%;
+}
+
+.bi{
+    margin-bottom: 30px;
+}
+
+.vertical h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.vertical h4{
+    font-size: medium;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .vertical{
+        flex-basis: 100%;
+    }
+    
+    .vertical:nth-child(2), .vertical:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+header{
+    width: 100%;
+    top: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 40px 40px 30px;
+    border-bottom-right-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.cabeca{
+    display: flex;
+}
+
+.cabeca a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.cabeca .bi{
+    margin-right: 20px;
+}
+/*Aqui termina a edição do footer e header*/
+
+
+body{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: cover;
+}
+
+.container{
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card img{
+    transition: 0.5s;
+}
+
+.container .card h2{
+    font-size: 2rem;
+}
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .content p{
+    color: #666;
+    transition: 0.5s;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .card:hover{
+    background-color: #dc2e69;
+    color: #fff;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #000;
+    border-color: #dc2e69;
+}
+
+.container .card:hover .content p{
+    color: #fff;
+}
+
+.container .card:hover .content a{
+    color: #000;
+    background-color: #fff;
+}
+
+/*Segundo card*/
+
+.containerdois{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerdois .cardois{
+    position: relative;
+    padding: 10px;
+    width: 500px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.containerdois .cardois img{
+    transition: 0.5s;
+}
+
+.containerdois .cardois h2{
+    font-size: 2rem;
+}
+.containerdois .cardois .content{
+    padding: 20px;
+    text-align: center;
+}
+.containerdois .cardois .content p{
+    color: #666;
+    transition: 0.5s;
+}
+
+.containerdois .cardois .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+
+.containerdois .cardois:hover{
+    background-color: #dc2e69;
+    color: #fff;
+    box-shadow: 2px 20px 25px #000;
+    border-color: #dc2e69;
+}
+
+.containerdois .cardois:hover .content p{
+    color: #fff;
+}
+
+.containerdois .cardois:hover .content a{
+    color: #000;
+    background-color: #fff;
+}
+
+.banner{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    height: 250px;
+    border: solid 2px #000;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image: url(/Images/banner\ ngnl.jpg);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.titleOne {
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.titleOne h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.first-article{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    border: solid 1px #000;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.cartaz{
+    padding-right: 20px;
+}
+
+.first-article a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+
+.first-article a:hover{
+    color: #000;
+    border: #000 solid 1px;
+    background-color: #fff;
+}
+
+.yuu{
+    height: 180px;
+    width: 180px;
+}
+
+.pic{
+    height: 180px;
+    width: 200px;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.shirogif{
+    height: 180px;
+    width: 180px;
+}
+
+.btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #23D5AB;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 1;
+}
+
+.btnScrollToTop:active{
+    background-color: #12745d;
+    pointer-events: auto;
+    opacity: 1;
+}
