@@ -352,7 +352,7 @@ body{
     border: solid 2px #000;
     border-radius: 20px;
     background-color: #fff;
-    background-image: url(/Images/banner\ ngnl.jpg);
+    background-image: url(../Images/Banner.jpg);
     margin-top: 20px;
     overflow: hidden;
 }
@@ -457,4 +457,9 @@ section{
     background-color: #12745d;
     pointer-events: auto;
     opacity: 1;
+}
+
+.bi-arrow-up{
+    width: 30px;
+    height: 50px;
 }
