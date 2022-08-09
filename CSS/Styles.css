@@ -734,3 +734,30 @@ iframe{
 */
 
 /* Edição do card profile/Contato */
+.resp {
+    padding: 20px;
+    margin: 20px;
+}
+
+.creator{
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.contato{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contato:hover{
+    color: #000;
+    border: #000 solid 1px;
+    background-color: #fff;
+}
