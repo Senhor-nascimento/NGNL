@@ -467,6 +467,60 @@ section{
     height: 50px;
 }
 
+.btnHome{
+    position: fixed;
+    right: 10px;
+    bottom: 120px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #23D5AB;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 1;
+}
+
+.btnHome:active{
+    background-color: #12745d;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.bi-house-door-fill{
+    width: 30px;
+    height: 50px;
+}
+
+.btnGallery{
+    position: fixed;
+    right: 10px;
+    bottom: 65px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #23D5AB;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    opacity: 1;
+}
+
+.btnGallery:active{
+    background-color: #12745d;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.bi-images{
+    width: 30px;
+    height: 50px;
+}
+
 /*Aqui começa a edição da pagina universo e da pagina anime*/
 
 .second-article{
@@ -495,6 +549,8 @@ section{
 
 table{
     border-radius: 20px;
+    text-align: center;
+    justify-content: center;
 }
 
 th{
@@ -505,6 +561,7 @@ th{
 td{
     padding: 15px;
     text-align: center;
+    justify-content: center;
 }
 
 th:first-child{
@@ -549,5 +606,131 @@ iframe{
     justify-content: center;
     text-align: center;
 }
+
+/*Edição da pagina light novel*/
+.novel{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    border: solid 1px #000;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.artes-novel{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    border: solid 1px #000;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.capa{
+    max-width: 500px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Edição da galeria em NGNL*/
+
+.artes{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    border: solid 1px #000;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.gallery{
+    position: relative;
+    min-height: 100vh;
+}
+
+.gallery .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery .image-container .image-art{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.gallery .image-container .image-art img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery .image-container .image-art:hover img{
+    transform: scale(1.1);
+}
+
+/*
+.gallery .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.gallery .popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallery .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .gallery .popup-image img{
+        width: 95%;
+    }
+}
+*/
 
 /* Edição do card profile/Contato */
